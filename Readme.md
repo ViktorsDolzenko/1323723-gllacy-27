@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Dolzenko Viktors](https://up.htmlacademy.ru/htmlcss/27/user/1323723).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Мирошниченко](https://htmlacademy.ru/profile/id591417).
 
 ---
 
