@@ -50,9 +50,19 @@
       <ul>
         <li>
           <button type="button">Поиск</button>
+          <div>
+            <input type="text" placeholder="Что ищем?">
+          </div>
         </li>
         <li>
           <button type="button">Войти</button>
+          <div>
+            <input type="text" placeholder="Электронная почта">
+            <input type="password" placeholder="Пароль">
+            <a href="#">Войти</a>
+            <a href="#">Забыли пароль?</a>
+            <a href="#">Новая регистрация</a>
+          </div>
         </li>
         <li>
           <button type="button">Корзина</button>
@@ -70,7 +80,7 @@
   </header>
   <main>
     <section>
-      <h2>Наше мороженое</h2>
+      <h2 class="visually-hidden">Наше мороженое</h2>
       <ul>
         <li>
           <h3>Крем-брюле и пломбир с малиновым джемом</h3>
@@ -87,7 +97,7 @@
       </ul>
     </section>
     <section>
-      <h2>Специальное предложение</h2>
+      <h2 class="visually-hidden">Специальное предложение</h2>
       <div>
         <h4>Малинка даром!</h4>
         <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
@@ -100,7 +110,7 @@
       </div>
     </section>
     <section>
-      <h2>Предложения</h2>
+      <h2 class="visually-hidden">Предложения</h2>
       <ul>
         <li>
           <img src="img/orange.png" alt="Апельсиновое">
@@ -163,17 +173,17 @@
       </ul>
     </section>
     <article>
-      <h2>Наш блог</h2>
+      <h2 class="visually-hidden">Наш блог</h2>
       <p>Новое в нашем блоге</p>
       <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
     </article>
     <article>
-      <h2>Подписка на новости</h2>
+      <h2 class="visually-hidden">Подписка на новости</h2>
       <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не
         спамить и не слать всякой ненужной ерунды. Честно =) </p>
     </article>
     <section>
-      <h2>Как нас найти</h2>
+      <h2 class="visually-hidden">Как нас найти</h2>
       <img src="https://via.placeholder.com/150x100" alt="">
       <div>
         <p>Адрес главного офиса и офлайн-магазина</p>
@@ -184,47 +194,67 @@
         <a href="#">Форма обратной связи</a>
       </div>
     </section>
-    <footer>
-      <ul>
-        <li>
-          <a href="#">
-            <img src="img/twitter.svg" alt="twitter">
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="img/instagram.svg" alt="instagram">
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="img/fb.svg" alt="facebook">></a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="img/vk.svg" alt="vkontakte">
-          </a>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <a href="#">
-            <img src="img/heart.svg">Для поставщиков</a>
-        </li>
-        <li>
-          <a href="#">О производстве</a>
-        </li>
-        <li>
-          <a href="#">Наши документы</a>
-        </li>
-        <li>
-          <a href="#">Экологические стандарты</a>
-        </li>
-      </ul>
-      <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
-        <img src="img/logo-htmlacademy.svg" alt="">HTML Academy</a>
-    </footer>
   </main>
+  <footer>
+    <ul>
+      <li>
+        <a href="#">
+          <img src="img/twitter.svg" alt="twitter">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/instagram.svg" alt="instagram">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/fb.svg" alt="facebook">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/vk.svg" alt="vkontakte">
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="#">
+          <img src="img/heart.svg">Для поставщиков</a>
+      </li>
+      <li>
+        <a href="#">О производстве</a>
+      </li>
+      <li>
+        <a href="#">Наши документы</a>
+      </li>
+      <li>
+        <a href="#">Экологические стандарты</a>
+      </li>
+    </ul>
+    <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+      <img src="img/logo-htmlacademy.svg" alt="">HTML Academy</a>
+  </footer>
+  <section>
+    <h2>Мы обязательно вам ответим</h2>
+    <form action="https://echo.htmlacademy.ru" method="post" class="feedback">
+      <p>
+        <label class="visually-hidden" for="user-name">Имя</label>
+        <input class="name-user" id="user-name" type="text" name="name" placeholder="Как вас зовут?">
+      </p>
+      <p>
+        <label class="visually-hidden" for="user-email">Электронная почта</label>
+        <input class="email-user" id="user-email" type="email" name="email" placeholder="Ваша почта для ответа?">
+      </p>
+      <p>
+        <label class="visually-hidden" for="user-text">Сообщение</label>
+        <textarea class="text-user" id="user-text" name="text" cols="50" rows="6" placeholder="Напишите что-нибудь..."></textarea>
+      </p>
+      <button class="button" type="submit">Отправить</button>
+    </form>
+  </section>
+
 </body>
 
 </html>
