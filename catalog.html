@@ -10,7 +10,7 @@
 <body>
   <header>
     <a href="index.html">
-      <img src="img/logo.svg" alt="Логотип сайта" width=154 height=64>
+      <img src="img/logo.svg" alt="Логотип сайта" width="154" height="64">
     </a>
     <nav>
       <ul>
@@ -44,21 +44,31 @@
     </nav>
     <ul>
       <li>
-        <button type="button">Поиск</button>
+        <a href="#">Поиск</a>
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <input type="text" placeholder="Что ищем?">
+          <button class="button visually-hidden" type="submit">Отправить</button>
+        </form>
       </li>
       <li>
-        <button type="button">Войти</button>
+        <a href="#">Войти</a>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <input type="text" placeholder="Электронная почта">
+          <input type="password" placeholder="Пароль">
+          <button class="button" type="submit">Войти</button>
+          <a href="#">Забыли пароль?</a>
+          <a href="#">Новая регистрация</a>
+        </form>
       </li>
       <li>
-        <button type="button">Корзина</button>
+        <a href="#">Корзина</a>
       </li>
     </ul>
     <div>
       <p>
         С 10 до 20, ежедневно
       </p>
-      <p>8 812 450-25-25
-      </p>
+      <a href="tel:88124502525">8 812 450-25-25 (с 10 до 20 ежедневно)</a>
     </div>
   </header>
   <main>
@@ -76,11 +86,53 @@
         </li>
       </ul>
     </section>
+    <form action="https://echo.htmlacademy.ru" method="get">
+      <fieldset>
+        <legend>Сортировка:</legend>
+        <select>
+          <option value="popular">по популярности</option>
+          <option value="expensive-first">сначала недорогие</option>
+          <option value="cheap-first">сначала дорогие</option>
+          <option value="fat">по жирности</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Цена: 100 руб. - 500руб.</legend>
+        <div>
+
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Жирность:</legend>
+        <input type="radio" id="r1" name="richness" value="0">
+        <label for="r1">0%</label>
+        <input type="radio" id="r2" name="richness" value="10">
+        <label for="r2">до 10%</label>
+        <input type="radio" id="r3" name="richness" value="30">
+        <label for="r3">до 30%</label>
+        <input type="radio" id="r4" name="richness" value="30">
+        <label for="r4">выше 30%</label>
+      </fieldset>
+      <fieldset>
+        <legend>Наполнители:</legend>
+        <input type="checkbox" id="c1" name="tastes" value="chocolate">
+        <label for="c1">шоколадные</label>
+        <input type="checkbox" id="c2" name="tastes" value="sugar">
+        <label for="c2">сахарные присыпки</label>
+        <input type="checkbox" id="c3" name="tastes" value="fruits">
+        <label for="c3">фрукты</label>
+        <input type="checkbox" id="c4" name="tastes" value="syrup">
+        <label for="c4">сиропы</label>
+        <input type="checkbox" id="c5" name="tastes" value="jam">
+        <label for="c5">джемы</label>
+      </fieldset>
+      <button class="button" type="submit">Применить</button>
+    </form>
     <section>
       <h1>Сливочное мороженое</h1>
       <ul>
         <li>
-          <img src="img/orange.png" alt="Апельсиновое" width=49 height=49>
+          <img src="img/orange.png" alt="Апельсиновое" width="267" height="267">
           <p>310 Р
             <span>/кг</span>
           </p>
@@ -89,7 +141,7 @@
           </h3>
         </li>
         <li>
-          <img src="img/coffee.png" alt="Кофейное" width=49 height=49>
+          <img src="img/coffee.png" alt="Кофейное" width="267" height="267">
           <p>380 Р
             <span>/кг</span>
           </p>
@@ -98,7 +150,7 @@
           </h3>
         </li>
         <li>
-          <img src="img/strawberry.png" alt="Клубничное" width=49 height=49>
+          <img src="img/strawberry.png" alt="Клубничное" width="267" height="267">
           <p>355 Р
             <span>/кг</span>
           </p>
@@ -108,7 +160,7 @@
 
         </li>
         <li>
-          <img src="img/cream.png" alt="Крем-брюле" width=49 height=49>
+          <img src="img/cream.png" alt="Крем-брюле" width="267" height="267">
           <p>415 Р
             <span>/кг</span>/p>
             <h3>
@@ -116,7 +168,7 @@
             </h3>
         </li>
         <li>
-          <img src="img/lingonberries.png" alt="Брусничное" width=49 height=49>
+          <img src="img/lingonberries.png" alt="Брусничное" width="267" height="267">
           <p>325 Р
             <span>/кг</span>
           </p>
@@ -125,7 +177,7 @@
           </h3>
         </li>
         <li>
-          <img src="img/blueberry.png" alt="Черничное" width=49 height=49>
+          <img src="img/blueberry.png" alt="Черничное" width="267" height="267">
           <p>410 Р
             <span>/кг</span>
           </p>
@@ -134,7 +186,7 @@
           </h3>
         </li>
         <li>
-          <img src="img/lemon.png" alt="Лимонное" width=49 height=49>
+          <img src="img/lemon.png" alt="Лимонное" width="267" height="267">
           <p>375 Р
             <span>/кг</span>
           </p>
@@ -143,7 +195,7 @@
           </h3>
         </li>
         <li>
-          <img src="img/chocolate.png" alt="Шоколадное" width=49 height=49>
+          <img src="img/chocolate.png" alt="Шоколадное" width="267" height="267">
           <p>320 RUB
             <span>/кг</span>
           </p>
@@ -152,7 +204,7 @@
           </h3>
         </li>
         <li>
-          <img src="img/vanilla.png" alt="Ванильное" width=49 height=49>
+          <img src="img/vanilla.png" alt="Ванильное" width="267" height="267">
           <p>440 RUB
             <span>/кг</span>
           </p>
@@ -161,7 +213,7 @@
           </h3>
         </li>
         <li>
-          <img src="img/menthol.png" alt="Ментоловое" width=49 height=49>
+          <img src="img/menthol.png" alt="Ментоловое" width="267" height="267">
           <p>435 RUB
             <span>/кг</span>
           </p>
@@ -170,7 +222,7 @@
           </h3>
         </li>
         <li>
-          <img src="img/darkchocolate.png" alt="Черный шоколад" width=49 height=49>
+          <img src="img/darkchocolate.png" alt="Черный шоколад" width="267" height="267">
           <p>355 RUB
             <span>/кг</span>
           </p>
@@ -179,7 +231,7 @@
           </h3>
         </li>
         <li>
-          <img src="img/mint.png" alt="Мятное" width=49 height=49>
+          <img src="img/mint.png" alt="Мятное" width="267" height="267">
           <p>420 RUB
             <span>/кг</span>
           </p>
@@ -189,6 +241,11 @@
         </li>
       </ul>
       <ul>
+        <li>
+          <a href="#">
+            <img src="img/arrow.svg" alt="Назад">
+          </a>
+        </li>
         <li>
           <a href="#">1</a>
         </li>
@@ -203,6 +260,11 @@
         </li>
         <li>
           <a href="#">5</a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/arrow.svg" alt="Вперед">
+          </a>
         </li>
       </ul>
     </section>
@@ -232,8 +294,7 @@
     </ul>
     <ul>
       <li>
-        <a href="#">
-          Для поставщиков</a>
+        <a href="#">Для поставщиков</a>
       </li>
       <li>
         <a href="#">О производстве</a>
@@ -246,7 +307,7 @@
       </li>
     </ul>
     <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
-      <img src="img/logo-htmlacademy.svg" alt="htmlacademy" width=108px height=39px>HTML Academy</a>
+      <img src="img/logo-htmlacademy.svg" alt="htmlacademy" width="108" height="39">HTML Academy</a>
   </footer>
 </body>
 
