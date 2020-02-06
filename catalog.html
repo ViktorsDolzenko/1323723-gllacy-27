@@ -104,27 +104,49 @@
       </fieldset>
       <fieldset>
         <legend>Жирность:</legend>
-        <input type="radio" id="r1" name="richness" value="0">
-        <label for="r1">0%</label>
-        <input type="radio" id="r2" name="richness" value="10">
-        <label for="r2">до 10%</label>
-        <input type="radio" id="r3" name="richness" value="30">
-        <label for="r3">до 30%</label>
-        <input type="radio" id="r4" name="richness" value="30">
-        <label for="r4">выше 30%</label>
+        <ul>
+          <li>
+            <input type="radio" id="r1" name="richness" value="0">
+            <label for="r1">0%</label>
+          </li>
+          <li>
+            <input type="radio" id="r2" name="richness" value="10">
+            <label for="r2">до 10%</label>
+          </li>
+          <li>
+            <input type="radio" id="r3" name="richness" value="30">
+            <label for="r3">до 30%</label>
+          </li>
+          <li>
+            <input type="radio" id="r4" name="richness" value="30">
+            <label for="r4">выше 30%</label>
+          </li>
+        </ul>
       </fieldset>
       <fieldset>
         <legend>Наполнители:</legend>
-        <input type="checkbox" id="c1" name="tastes" value="chocolate">
-        <label for="c1">шоколадные</label>
-        <input type="checkbox" id="c2" name="tastes" value="sugar">
-        <label for="c2">сахарные присыпки</label>
-        <input type="checkbox" id="c3" name="tastes" value="fruits">
-        <label for="c3">фрукты</label>
-        <input type="checkbox" id="c4" name="tastes" value="syrup">
-        <label for="c4">сиропы</label>
-        <input type="checkbox" id="c5" name="tastes" value="jam">
-        <label for="c5">джемы</label>
+        <ul>
+          <li>
+            <input type="checkbox" id="c1" name="tastes" value="chocolate">
+            <label for="c1">шоколадные</label>
+          </li>
+          <li>
+            <input type="checkbox" id="c2" name="tastes" value="sugar">
+            <label for="c2">сахарные присыпки</label>
+          </li>
+          <li>
+            <input type="checkbox" id="c3" name="tastes" value="fruits">
+            <label for="c3">фрукты</label>
+          </li>
+          <li>
+            <input type="checkbox" id="c4" name="tastes" value="syrup">
+            <label for="c4">сиропы</label>
+          </li>
+          <li>
+            <input type="checkbox" id="c5" name="tastes" value="jam">
+            <label for="c5">джемы</label>
+          </li>
+        </ul>
       </fieldset>
       <button class="button" type="submit">Применить</button>
     </form>
@@ -157,7 +179,6 @@
           <h3>
             <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
           </h3>
-
         </li>
         <li>
           <img src="img/cream.png" alt="Крем-брюле" width="267" height="267">
@@ -242,8 +263,8 @@
       </ul>
       <ul>
         <li>
-          <a href="#">
-            <img src="img/arrow.svg" alt="Назад">
+          <a href="#" aria-label="previous">
+            Перейти на предыдущую страницу
           </a>
         </li>
         <li>
@@ -262,8 +283,8 @@
           <a href="#">5</a>
         </li>
         <li>
-          <a href="#">
-            <img src="img/arrow.svg" alt="Вперед">
+          <a href="#" aria-label="next">
+            Перейти на следующую страницу
           </a>
         </li>
       </ul>
