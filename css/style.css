@@ -1,0 +1,155 @@
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background-color: #849d8f;
+  color: #ffffff;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  padding: 0 27px;
+}
+
+.main-navigation {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.site-navigation a,
+.offers-main a {
+  text-decoration-line: underline;
+  text-decoration-color: rgba(255, 255, 255, 20%);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: #f7f6f3;
+  color: #323232;
+  border-radius: 16px;
+  padding: 5px;
+}
+
+.offers-list h3 {
+  font-size: 60px;
+  width: 700px;
+  text-align: center;
+}
+
+.offer-raspberry {
+  background-image: url("../img/raspberry-bg.jpg");
+  width: 560px;
+  height: 229px;
+  border-radius: 15px;
+}
+
+.offer-chocolate {
+  background-image: url("../img/chocolate-bg.jpg");
+  width: 560px;
+  height: 229px;
+  border-radius: 15px;
+}
+
+.offer-raspberry h4,
+.offer-chocolate h4 {
+  font-size: 35px;
+}
+
+.offer-raspberry p,
+.offer-chocolate p {
+  font-size: 18px;
+}
+
+.new::before {
+  content: url(../img/hit.svg);
+  position: absolute;
+}
+
+.features {
+  margin-bottom: 40px;
+  padding: 24px 21px 0 20px;
+  background-color: #eadec4;
+  background-image: url(../img/waffle-bg-feature.jpg);
+  background-position: 50% 50%;
+  border-radius: 13px;
+  color: #323232;
+  background-size: cover;
+}
+
+.blog {
+  width: 560px;
+  height: 220px;
+  color: #323232;
+  border-radius: 15px;
+  background-image: url(../img/strawbery-bg-article.jpg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  padding-bottom: 30px;
+}
+
+.blog a {
+  color: #323232;
+}
+
+.blog p {
+  padding: 20px;
+}
+
+.blog a {
+  font-size: 24px;
+  text-decoration: underline;
+}
+
+.email {
+  background-image: url("../img/email.png");
+  border-radius: 10px;
+  background-color: #f8f7f4;
+  padding: 5px;
+}
+
+.email-wrap {
+  background-color: grey;
+  margin: 0;
+  padding: 28px 20px 35px 20px;
+}
+
+.email p {
+  margin: 0;
+}
+
+.feedback-section,
+.slide-2,
+.slide-3,
+.user-navigation {
+  display: none;
+}
