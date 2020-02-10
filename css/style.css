@@ -42,10 +42,40 @@ a {
 .main-navigation {
   color: #ffffff;
   font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-navigation li {
+  padding: 0 10px;
+  list-style: none;
+}
+
+.user-wrapper {
+  margin-left: auto;
+}
+
+.user-navigation {
+  display: flex;
+}
+
+.user-navigation li {
+  padding: 0 10px;
+  list-style: none;
+}
+
+.navigation-info {
+  text-align: right;
 }
 
 .site-navigation a,
-.offers-main a {
+.offers-main a,
+  {
   text-decoration-line: underline;
   text-decoration-color: rgba(255, 255, 255, 20%);
 }
@@ -150,6 +180,7 @@ a {
 .feedback-section,
 .slide-2,
 .slide-3,
-.user-navigation {
-  display: none;
+.special-offers {
+  display: flex;
+  justify-content: space-between;
 }

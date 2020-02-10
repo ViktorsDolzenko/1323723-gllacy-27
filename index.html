@@ -4,21 +4,22 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"
+    rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header>
-    <a>
-      <img src="img/logo.svg" alt="Логотип сайта" width="154" height="64">
-    </a>
     <nav class="main-navigation">
+      <a>
+        <img src="img/logo.svg" alt="Логотип сайта" width="154" height="64">
+      </a>
       <ul class="site-navigation">
         <li>
           <a href="#">Каталог</a>
-          <ul class="site-navigation">
+          <ul class="site-navigation visually-hidden">
             <li>
               <a href="#">Новинки</a>
             </li>
@@ -43,36 +44,36 @@
           <a href="#">О Компании</a>
         </li>
       </ul>
+      <div class="user-wrapper">
+        <ul class="user-navigation">
+          <li>
+            <a href="#">Поиск</a>
+            <form action="https://echo.htmlacademy.ru" method="get" class="visually-hidden">
+              <input type="text" placeholder="Что ищем?">
+              <button class="button visually-hidden" type="submit">Отправить</button>
+            </form>
+          </li>
+          <li>
+            <a href="#">Войти</a>
+            <form action="https://echo.htmlacademy.ru" method="post" class="visually-hidden">
+              <input type="text" placeholder="Электронная почта">
+              <input type="password" placeholder="Пароль">
+              <button class="button" type="submit">Войти</button>
+              <a href="#">Забыли пароль?</a>
+              <a href="#">Новая регистрация</a>
+            </form>
+          </li>
+          <li>
+            <a href="#">Корзина</a>
+          </li>
+        </ul>
+      </div>
     </nav>
-    <div>
-      <ul class="user-navigation">
-        <li>
-          <a href="#">Поиск</a>
-          <form action="https://echo.htmlacademy.ru" method="get">
-            <input type="text" placeholder="Что ищем?">
-            <button class="button visually-hidden" type="submit">Отправить</button>
-          </form>
-        </li>
-        <li>
-          <a href="#">Войти</a>
-          <form action="https://echo.htmlacademy.ru" method="post">
-            <input type="text" placeholder="Электронная почта">
-            <input type="password" placeholder="Пароль">
-            <button class="button" type="submit">Войти</button>
-            <a href="#">Забыли пароль?</a>
-            <a href="#">Новая регистрация</a>
-          </form>
-        </li>
-        <li>
-          <a href="#">Корзина</a>
-        </li>
-      </ul>
-    </div>
     <div class="navigation-info">
       <p>
         С 10 до 20, ежедневно
-        <a href="tel:88124502525">8 812 450-25-25</a>
       </p>
+      <a href="tel:88124502525">8 812 450-25-25</a>
     </div>
   </header>
   <main>
@@ -85,29 +86,33 @@
             <h3>Крем-брюле и пломбир с малиновым джемом</h3>
             <a href="#">Давайте оба!</a>
           </li>
-          <li class="slide-2">
+          <li class="visually-hidden">
             <img src="img/bg-slide2.png" alt="Шоколадный пломбир и лимонный сорбет" width="1065" height="859">
             <h3>Шоколадный пломбир и лимонный сорбет</h3>
             <a href="#">Давайте оба!</a>
           </li>
-          <li class="slide-3">
+          <li class="visually-hidden">
             <img src="img/bg-slide3.png" alt="Шоколадный пломбир и лимонный сорбет" width="1079" height="854">
             <h3>Шоколадный пломбир и лимонный сорбет</h3>
             <a href="#">Давайте оба!</a>
           </li>
         </ul>
       </section>
-      <section class="special-offer">
-        <h2 class="visually-hidden">Специальное предложение</h2>
-        <div class="offer-raspberry">
-          <h4>Малинка даром!</h4>
-          <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <a href="#">Хочу варенье!</a>
-        </div>
-        <div class="offer-chocolate">
-          <h4>Шоколадки даром!</h4>
-          <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-          <a href="#" class="button">Хочу шоколадки!</a>
+      <section>
+        <div class="special-wrapper">
+          <div class="special-offers">
+            <h2 class="visually-hidden">Специальное предложение</h2>
+            <div class="offer-raspberry">
+              <h4>Малинка даром!</h4>
+              <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+              <a href="#">Хочу варенье!</a>
+            </div>
+            <div class="offer-chocolate">
+              <h4>Шоколадки даром!</h4>
+              <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+              <a href="#" class="button">Хочу шоколадки!</a>
+            </div>
+          </div>
         </div>
       </section>
       <section class="offers-main">
@@ -245,7 +250,7 @@
     <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
       <img src="img/logo-htmlacademy.svg" alt="htmlacademy" width="108" height="39">HTML Academy</a>
   </footer>
-  <section class="feedback-section">
+  <section class="feedback-section visually-hidden">
     <h2>Мы обязательно вам ответим</h2>
     <form action="https://echo.htmlacademy.ru" method="post" class="feedback">
       <p>
