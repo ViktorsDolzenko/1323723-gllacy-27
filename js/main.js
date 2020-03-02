@@ -6,7 +6,6 @@ var name = popupfeed.querySelector("[name=username]");
 var email = popupfeed.querySelector("[name=useremail]")
 var isStorageSupport = true;
 var storage = "";
-var modal
 
 try {
   storage = localStorage.getItem("name");
