@@ -2,11 +2,9 @@ var feedbtn = document.querySelector(".feedback-entry");
 var popupfeed = document.querySelector(".feedback-section");
 var close = popupfeed.querySelector(".feedback-close");
 var form = document.querySelector(".feedback");
-var name = popupfeed.querySelector("[name=username]");
-var email = popupfeed.querySelector("[name=useremail]")
+
 var isStorageSupport = true;
 var storage = "";
-var modal
 
 try {
   storage = localStorage.getItem("name");
@@ -15,7 +13,7 @@ try {
 }
 
 
-
+var name = popupfeed.querySelector("[name=username]");
 feedbtn.addEventListener("click", function (evt) {
   evt.preventDefault();
   popupfeed.classList.add("modal-show");
@@ -34,6 +32,8 @@ close.addEventListener("click", function (evt) {
 });
 
 form.addEventListener("submit", function (evt) {
+var name = popupfeed.querySelector("[name=username]");
+var email = popupfeed.querySelector("[name=useremail]");
   if (!name.value || !email.value) {
     evt.preventDefault();
     popupfeed.classList.remove("modal-error");
