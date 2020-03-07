@@ -83,7 +83,7 @@
               </ul>
             </form>
           </li>
-          <li class="cart-li">
+          <li class="cart-li-main">
             <a href="#" class="user-navigation-link">
               <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
                 <g class="cart-svg" fill="#FFF">
@@ -98,9 +98,11 @@
       </div>
     </nav>
     <div class="navigation-info">
-      <p class="working-time">
+      <span>
         С 10 до 20, ежедневно
-      </p>
+      </span>
+    </div>
+    <div class="phonenumber">
       <a href="tel:88124502525">8 812 450-25-25</a>
     </div>
   </header>
@@ -147,7 +149,7 @@
           </div>
           <div class="offer-chocolate">
             <h4 class="chocolate-title">Шоколадки даром!</h4>
-            <p> При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+            <p class="chocolate-text"> При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
             <a href="#" class="buttons special-button2">Хочу шоколадки!</a>
           </div>
         </div>
@@ -159,8 +161,8 @@
           <div class="list-absolute">
             <img src="img/orange.png" alt="Апельсиновое" width="267" height="267">
             <p class="price">
-              <span>310 ₽</span>
-              <span class="kg">/кг</span>
+              <span>310</span>
+              <span>₽</span><span class="kg">/кг</span>
             </p>
             <a href="#" class="preview-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             <a class="buttons quick-preview-btn" href="#">Быстрый просмотр</a>
@@ -171,8 +173,8 @@
           <div class="list-absolute">
             <img src="img/coffee.png" alt="Кофейное" width="267" height="267">
             <p class="price">
-              <span>380 ₽</span>
-              <span class="kg">/кг</span>
+              <span>380</span>
+              <span>₽</span><span class="kg">/кг</span>
             </p>
             <a href="#" class="preview-title">Сливочно-кофейное с кусочками шоколада
             </a>
@@ -183,8 +185,8 @@
           <div class="list-absolute">
             <img src="img/strawberry.png" alt="Клубничное" width="267" height="267">
             <p class="price">
-              <span>355 ₽</span>
-              <span class="kg">/кг</span>
+              <span>355</span>
+              <span>₽</span><span class="kg">/кг</span>
             </p>
             <a href="#" class="preview-title">Сливочно-клубничное с присыпкой из белого шоколада
               <a class="buttons quick-preview-btn" href="#">Быстрый просмотр</a>
@@ -194,8 +196,8 @@
           <div class="list-absolute">
             <img src="img/cream.png" alt="Крем-брюле" width="267" height="267">
             <p class="price">
-              <span>415 ₽</span>
-              <span class="kg">/кг</span>
+              <span>415</span>
+              <span>₽</span><span class="kg">/кг</span>
             </p>
             <a href="#" class="preview-title">Сливочное крем-брюле с карамельной подливкой
             </a>
@@ -239,7 +241,7 @@
           <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем
             не спамить и не слать всякой ненужной ерунды. Честно =)</p>
           <form action="https://echo.htmlacademy.ru" method="post" class="email-form">
-            <input class="email-input-style" type="email" placeholder="Электронная почта" required="">
+            <input class="email-input-style" type="email" placeholder="email@example.com" required="">
 
             <input class="buttons email-submit" type="submit" value="Отправить">
 
@@ -257,9 +259,9 @@
 
         </div>
         <div class="contacts">
-          <p>Адрес главного офиса и офлайн-магазина:</p>
-          <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
-          <p>Для заказов по телефону:</p>
+          <h3 class="address-title">Адрес главного офиса и офлайн магазина:</h3>
+          <b class="adress-feedback">ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+          <h3 class="phone-title">Для заказов по телефону:</h3>
           <a class="phone-feedback" href="tel:88124502525">8 812 450-25-25</a>
           <p>(с 10 до 20 ежедневно)</p>
           <a href="#" class="buttons feedback-entry">Форма обратной связи</a>
@@ -267,7 +269,7 @@
       </section>
     </div>
   </main>
-  <footer class="container">
+  <footer class="footer-container">
     <div class="page-footer">
       <div class="socials-wrap">
         <ul class="socials">
@@ -325,7 +327,7 @@
       </p>
       <p>
         <label class="visually-hidden" for="user-email">Электронная почта</label>
-        <input class="email-user feedback-field" id="user-email" type="text" name="useremail" placeholder="email@example.com">
+        <input class="email-user feedback-field" id="user-email" type="email" name="useremail" placeholder="email@example.com">
       </p>
       <p>
         <label class="visually-hidden" for="user-text">Сообщение</label>
