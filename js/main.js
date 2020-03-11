@@ -6,6 +6,7 @@ var userName = popupfeed.querySelector("[name=username]");
 var userEmail = popupfeed.querySelector("[name=useremail]");
 var isStorageSupport = true;
 var storage = "";
+var catalog = document.querySelector('.catalog');
 
 try {
   storage = localStorage.getItem("name");
@@ -47,4 +48,8 @@ form.addEventListener("submit", function (evt) {
 });
 
 
+catalog.addEventListener("click",function(keytoOpen){
 
+ catalog.classList.toggle("dropdown-active");
+
+});
