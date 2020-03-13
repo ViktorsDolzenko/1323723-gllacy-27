@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"
     rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -56,7 +56,7 @@
             <span class="hide">Поиск</span>
           </a>
           <form action="https://echo.htmlacademy.ru" method="get" class="hide search-form">
-            <input type="search" placeholder="Что ищем?" class="search-input">
+            <input type="search" placeholder="Что ищем?" class="search-input placeholder-style" >
             <button class="button visually-hidden" type="submit">Отправить</button>
           </form>
         </li>
@@ -70,9 +70,9 @@
             </svg>
             Вход
           </a>
-          <form action="https://echo.htmlacademy.ru" method="post" class="hide login-form">
-            <input type="text" placeholder="email@example.com">
-            <input type="password" placeholder="••••••••">
+          <form action="https://echo.htmlacademy.ru" method="post" class="hide login-form ">
+            <input type="text" placeholder="email@example.com" class="placeholder-style">
+            <input type="password" placeholder="••••••••" class="placeholder-style">
             <button class="button buttons login-button" type="submit">Войти</button>
             <ul class="login-list">
               <li>
@@ -245,7 +245,7 @@
           <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем
             не спамить и не слать всякой ненужной ерунды. Честно =)</p>
           <form action="https://echo.htmlacademy.ru" method="post" class="email-form">
-            <input class="email-input-style" type="email" placeholder="email@example.com" required="">
+            <input class="email-input-style placeholder-style" type="email" placeholder="email@example.com" required="">
 
             <input class="buttons email-submit" type="submit" value="Отправить">
 
@@ -321,20 +321,20 @@
     <form action="https://echo.htmlacademy.ru" method="post" class="feedback">
       <p>
         <label class="visually-hidden" for="user-name">Имя</label>
-        <input class="name-user feedback-field" id="user-name" type="text" name="username" placeholder="Имя Фамилия">
+        <input class="name-user feedback-field placeholder-style" id="user-name" type="text" name="username" placeholder="Имя Фамилия">
       </p>
       <p>
         <label class="visually-hidden" for="user-email">Электронная почта</label>
-        <input class="email-user feedback-field" id="user-email" type="email" name="useremail" placeholder="email@example.com">
+        <input class="email-user feedback-field placeholder-style" id="user-email" type="email" name="useremail" placeholder="email@example.com">
       </p>
       <p>
         <label class="visually-hidden" for="user-text">Сообщение</label>
-        <textarea class="text-user" id="user-text" name="text" cols="50" rows="6" placeholder="В свободной форме"></textarea>
+        <textarea class="text-user" id="user-text placeholder-style" name="text" cols="50" rows="6" placeholder="В свободной форме"></textarea>
       </p>
       <button class="feedback-submit buttons" type="submit">Отправить</button>
     </form>
   </section>
-  <script src="js/main.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

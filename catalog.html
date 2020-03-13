@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"
     rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -19,7 +19,7 @@
       <nav class="main-navigation-catalog">
         <ul class="site-navigation-catalog">
           <li class="site-navigation-list-active catalog">
-            <a href="#" class="navigation-link">Каталог</a>
+            <a href="#" class="navigation-link catalog-style">Каталог</a>
             <ul class="dropdown">
               <li class="dropdown-item dropdown-new">
                 <a href="#">Новинки</a>
@@ -56,7 +56,7 @@
             <span class="hide">Поиск</span>
           </a>
           <form action="https://echo.htmlacademy.ru" method="get" class="hide search-form">
-            <input type="search" placeholder="Что ищем?" class="search-input">
+            <input type="search" placeholder="Что ищем?" class="search-input placeholder-style">
             <button class="button visually-hidden" type="submit">Отправить</button>
           </form>
         </li>
@@ -71,8 +71,8 @@
             Вход
           </a>
           <form action="https://echo.htmlacademy.ru" method="post" class="hide login-form">
-            <input type="text" placeholder="email@example.com">
-            <input type="password" placeholder="••••••••">
+            <input type="text" placeholder="email@example.com" class="placeholder-style">
+            <input type="password" placeholder="••••••••" class="placeholder-style">
             <button class="button buttons login-button" type="submit">Войти</button>
             <ul class="login-list">
               <li>
@@ -181,8 +181,8 @@
               <div class="price-scale">
                 <div class="price-scale-chosen"></div>
               </div>
-              <div class="price-toogle first-toogle"></div>
-              <div class="price-toogle second-toogle"></div>
+              <div class="price-toogle first-toogle" tabindex="0"></div>
+              <div class="price-toogle second-toogle" tabindex="0"></div>
             </div>
           </fieldset>
           <fieldset class="filter-fieldset richness">
@@ -463,6 +463,7 @@
         <img src="img/logo-htmlacademy.svg" alt="htmlacademy" width="108" height="39" class="html-logo">Сделано в HTML Academy @ 2019</a>
     </div>
   </footer>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

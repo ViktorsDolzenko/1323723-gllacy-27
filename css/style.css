@@ -114,12 +114,19 @@ a {
   padding: 5px;
 }
 
-.site-navigation-list>a:hover,
+.site-navigation-list>a:hover {
+  background-color: white;
+  color: black;
+  border-radius: 3em;
+  padding: 5px;
+}
+
 .site-navigation-list>a:focus {
   background-color: white;
   color: black;
   border-radius: 3em;
   padding: 5px;
+  box-shadow: inset 0px 2px 1px 0 #696969;
 }
 
 .dropdown {
@@ -132,10 +139,10 @@ a {
   padding: 0;
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   border-radius: 5px;
-  transition: color 0.3s linear, background-color 0.3s linear, box-shadow 0.2s linear;
+  ;
   z-index: 10;
+  overflow: hidden;
 }
-
 
 .dropdown li {
   list-style: none;
@@ -153,40 +160,31 @@ a {
   font-weight: normal;
 }
 
-.catalog:hover .dropdown-new {
-  padding-top: 10px;
-  padding-bottom: 17px;
-}
-
-.dropdown-item {
-  padding: 6px 0 6px 20px;
-}
-
-.dropdown-item:last-child {
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+.catalog .dropdown-new a {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .dropdown-item a {
+  padding-left: 20px;
+  display: block;
   color: black;
-}
-
-.dropdown-new {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  line-height: 30px;
 }
 
 .dropdown-new a {
   font-weight: bold;
 }
 
-.dropdown-item:hover {
+.dropdown-item a:hover {
   background-color: #fbded7;
   transition: background-color 0.3s ease;
 }
 
-.dropdown-item:focus {
+.dropdown-item a:focus {
   background-color: #f6b5a5;
+  display: block;
+  width: 100%;
 }
 
 .dropdown-new::before {
@@ -212,12 +210,9 @@ a {
   color: white;
 }
 
-.site-navigation-list-active a:hover {
+.site-navigation-list-active .catalog-style:hover,
+.site-navigation-list-active .catalog-style:focus {
   color: white;
-}
-
-.dropdown-item a:hover {
-  color: black;
 }
 
 .active {
@@ -303,7 +298,10 @@ a {
 
 .search-image:hover .search-svg,
 .login-li:hover .login-svg,
-.cart-li-main:hover .cart-svg {
+.cart-li-main:hover .cart-svg,
+.search-image:focus .search-svg,
+.login-li a:focus .login-svg,
+.cart-li-main a:focus .cart-svg {
   fill: black;
 }
 
@@ -325,12 +323,14 @@ a {
   margin: 0;
 }
 
-.user-navigation-link:hover {
+.user-navigation-link:hover,
+.user-navigation-link:focus {
   background: white;
   color: black;
 }
 
-.search:hover form {
+.search:hover form,
+.search.search-active form {
   position: absolute;
   top: 40px;
   right: 10px;
@@ -346,7 +346,9 @@ a {
 }
 
 .navigation-link:hover,
-.site-navigation-list:hover {
+.site-navigation-list:hover,
+.navigation-link:focus,
+.site-navigation-list:focus {
   color: black;
   text-decoration-line: none;
 }
@@ -1182,6 +1184,7 @@ a {
   border-radius: 50%;
   cursor: pointer;
   vertical-align: middle;
+  transition: background-color 0.3s ease;
 }
 
 .slider-controls {
@@ -1205,6 +1208,13 @@ a {
 #slide-2:checked~.offers label[for="slide-2"],
 #slide-3:checked~.offers label[for="slide-3"] {
   background-color: white;
+}
+
+#slide-1:hover~.offers label[for="slide-1"],
+#slide-2:hover~.offers label[for="slide-2"],
+#slide-3:hover~.offers label[for="slide-3"] {
+  background-color: rgba(225, 225, 225, 0.2);
+  transition: background-color 0.3s ease;
 }
 
 .search-form {
@@ -1240,20 +1250,19 @@ a {
   transition: all 0.2s linear;
 }
 
-::-webkit-input-placeholder,
-::placeholder {
+.placeholder-style::-webkit-input-placeholder {
   /* Edge */
   font-weight: normal;
   color: #999999;
 }
 
-:-ms-input-placeholder {
+.placeholder-style:-ms-input-placeholder {
   /* Internet Explorer */
   font-weight: normal;
   color: #999999;
 }
 
-::placeholder {
+.placeholder-style {
   font-weight: normal;
   color: #999999;
 }
@@ -1269,7 +1278,8 @@ a {
   padding-bottom: 6px;
 }
 
-.login-li:hover form {
+.login-li:hover form,
+.login-li.login-active form {
   display: flex;
   flex-wrap: wrap;
   position: absolute;
@@ -1319,10 +1329,16 @@ a {
 .about-us-list a:active,
 .navigation-info a:hover,
 .navigation-info a:focus,
-.navigation-info a:active {
+.navigation-info a:active,
+.breadcrumb a:hover,
+.breadcrumb a:focus {
   color: #ffbc9e;
   border-color: rgba(236, 89, 60, 0.3);
   transition: color 0.2s linear, border-color 0.2s linear;
+}
+
+.active-link a:hover {
+  color: white;
 }
 
 .login-list {
@@ -1439,8 +1455,8 @@ a {
   height: 23px;
   background-color: transparent;
   border: none;
-  outline: none;
   cursor: pointer;
+  outline: 0;
 }
 
 .feedback-close::after {
@@ -1454,8 +1470,19 @@ a {
   height: 23px;
   background-color: transparent;
   border: none;
-  outline: none;
   cursor: pointer;
+  outline: 0;
+  transition: background-image 0.5s ease;
+}
+
+.feedback-close:focus::after,
+.feedback-close:hover::after {
+  top: 5px;
+  right: 0px;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/close-focus.svg");
+  transition: background-image 0.5s ease;
 }
 
 .modal-show {
@@ -1673,7 +1700,7 @@ a {
   outline: 1;
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
+  ;
   cursor: pointer;
   transition: color 0.5s ease-in-out;
   transition: background-image 0.2s ease-in-out;
@@ -1686,6 +1713,10 @@ a {
   background-repeat: no-repeat;
   background-position: 167px 14px;
   transition: color 0.5s ease-in-out;
+}
+
+.sort-by option {
+  color: black;
 }
 
 .sort-menu {
@@ -1717,7 +1748,6 @@ a {
 .radio-buttons input {
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
 }
 
 .radio-buttons label::before {
@@ -1732,6 +1762,10 @@ a {
 
 .radio-buttons :checked+label::before {
   content: url("../img/radio-on.png");
+}
+
+.radio-buttons :focus+label::before {
+  outline: blue auto 1px;
 }
 
 .radio-buttons label:hover::before {
@@ -1764,7 +1798,6 @@ a {
 .filter-fill input {
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
 }
 
 .filter-fill label::before {
@@ -1776,8 +1809,12 @@ a {
   transition: opacity 0.3s ease;
 }
 
+.filter-fill :focus+label::before {
+  outline: blue auto 1px;
+}
+
 .filter-fill :checked+label::before {
-  content: url("../img/checkbox-on.png")
+  content: url("../img/checkbox-on.png");
 }
 
 .filter-fill label:hover::before {
@@ -1865,7 +1902,9 @@ a {
 }
 
 .first-toogle:hover,
-.second-toogle:hover {
+.second-toogle:hover,
+.first-toogle:focus,
+.second-toogle:focus {
   transform: translateY(-50%) scale(1.1);
   transition: transform 0.5s ease;
 }
