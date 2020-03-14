@@ -71,7 +71,7 @@
             Вход
           </a>
           <form action="https://echo.htmlacademy.ru" method="post" class="hide login-form ">
-            <input type="text" placeholder="email@example.com" class="placeholder-style">
+            <input type="text" placeholder="email@example.com" class="placeholder-style email-input">
             <input type="password" placeholder="••••••••" class="placeholder-style">
             <button class="button buttons login-button" type="submit">Войти</button>
             <ul class="login-list">
@@ -246,20 +246,15 @@
             не спамить и не слать всякой ненужной ерунды. Честно =)</p>
           <form action="https://echo.htmlacademy.ru" method="post" class="email-form">
             <input class="email-input-style placeholder-style" type="email" placeholder="email@example.com" required="">
-
-            <input class="buttons email-submit" type="submit" value="Отправить">
-
+            <button class="buttons email-submit" type="submit">Отправить</button>
           </form>
         </div>
       </article>
     </div>
-
-    <div class="map-container">
-      <section>
-        <h2 class="visually-hidden">Как нас найти</h2>
-        <div class="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2slv!4v1583176150005!5m2!1sru!2slv"></iframe>
-        </div>
+    <section class="map-container">
+      <h2 class="visually-hidden">Как нас найти</h2>
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2slv!4v1583176150005!5m2!1sru!2slv"></iframe>
+      <div class="contacts-container container">
         <div class="contacts">
           <h3 class="address-title">Адрес главного офиса и офлайн магазина:</h3>
           <b class="adress-feedback">ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
@@ -268,8 +263,8 @@
           <p>(с 10 до 20 ежедневно)</p>
           <a href="#" class="buttons feedback-entry">Форма обратной связи</a>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   </main>
   <footer class="footer-container">
     <div class="page-footer">
