@@ -272,7 +272,7 @@ a {
 
 .navigation-info-catalog {
   position: absolute;
-  top: 91%;
+  top: 86%;
   right: 30px;
   font-size: 14px;
   z-index: 5;
@@ -282,7 +282,7 @@ a {
   position: absolute;
   right: 0;
   padding-right: 25px;
-  padding-top: 12px;
+  padding-top: 7px;
   font-size: 22px;
   font-weight: 700;
 }
@@ -556,11 +556,13 @@ a {
 }
 
 .new::before {
-  content: url(../img/hit.svg);
+  content: url("../img/hit.svg");
   position: absolute;
   z-index: 6;
   left: 13px;
   top: 10px;
+  width: 61px;
+  height: 61px;
 }
 
 .preview-title {
@@ -605,8 +607,8 @@ a {
 }
 
 .features-title {
-  margin-top: 19px;
-  padding-left: 15px;
+  margin-top: 18px;
+  padding-left: 13px;
   line-height: 30px;
 }
 
@@ -956,7 +958,7 @@ a {
 .breadcrumb {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 20px;
+  padding-top: 16px;
   padding-left: 0;
   margin: 0;
 }
